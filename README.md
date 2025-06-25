@@ -60,13 +60,10 @@ The model was evaluated using a test set and the following metrics:
 ## 📂 Project Structure
 
 Fake_Job_Detection/
-├── data/                    # Dataset used locally (linked via Kaggle)
-│   └── fake_job_postings.csv
-├── notebooks/               # Jupyter notebook with full project code
-│   └── fake_job_detection.ipynb
-├── visuals/                 # Confusion matrix and plots
-│   └── confusion_matrix.png
-├── README.md                # Project overview and documentation
+├── data/fake_job_postings.csv                 # Dataset used locally (linked via Kaggle) fake_job_postings.csv
+├── notebooks/fake_job_detection.ipynb         # Jupyter notebook with full project code  
+├── visuals/confusion_matrix.png               # Confusion matrix and plots
+├── README.md                                  # Project overview and documentation
 
 
 
