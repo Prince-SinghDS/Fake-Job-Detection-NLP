@@ -1,3 +1,5 @@
+🚧 **In Progress**
+
 🕵️‍♂️ Fake Job Detection using NLP & Machine Learning
 
 This project focuses on detecting **fake job postings** using **Natural Language Processing (NLP)** and **Machine Learning**. Built as an end-to-end text classification system, it analyzes job listings and classifies them as real or fake using a Logistic Regression model on TF-IDF-transformed data.
