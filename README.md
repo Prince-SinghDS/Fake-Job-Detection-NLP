@@ -1,4 +1,4 @@
-🚧 **In Progress**
+🚧 **In Progress** - LIME Added, SHAP & Deployment Coming Soon
 
 🕵️‍♂️ Fake Job Detection using NLP & Machine Learning
 
@@ -43,7 +43,7 @@ To run the notebook locally, download the dataset from the above link and save i
 
 📊 Model Evaluation
 
-The model was evaluated using a test set and the following metrics:
+The model was evaluated using a test set and the following metrics, followed by local interpretation using LIME:
 
 - **Accuracy**
 - **Precision**
@@ -57,6 +57,21 @@ The model was evaluated using a test set and the following metrics:
   <img src="visuals/confusion_matrix.png" width="400"/>
 </p>
 
+✅ Local interpretability added using LIME to visualize word influence on predictions  
+   [LIME HTML Explanation](visuals/lime_explanation_sample0.html)
+
+
+
+🧠 Explainability
+
+This project includes local model interpretation using **LIME (Local Interpretable Model-Agnostic Explanations)**:
+
+- LIME was used to explain individual predictions
+- It highlights which words contributed to the model classifying a job posting as **real** or **fake**
+- [View Sample LIME Explanation](visuals/lime_explanation_sample0.html)
+
+🔜 SHAP (SHapley Additive Explanations) will be added next for global model interpretation.
+
 
 
 ## 📂 Project Structure
@@ -65,6 +80,7 @@ Fake_Job_Detection/
 ├── data/fake_job_postings.csv                 # Dataset used locally (linked via Kaggle) fake_job_postings.csv
 ├── notebooks/fake_job_detection.ipynb         # Jupyter notebook with full project code  
 ├── visuals/confusion_matrix.png               # Confusion matrix and plots
+├── visuals/lime_explanation_sample0.html      # LIME HTML output for local model explainability
 ├── README.md                                  # Project overview and documentation
 
 
