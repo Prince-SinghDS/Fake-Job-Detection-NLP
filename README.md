@@ -57,9 +57,13 @@ The model was evaluated using a test set and the following metrics, followed by 
   <img src="visuals/confusion_matrix.png" width="400"/>
 </p>
 
-✅ Local interpretability added using LIME to visualize word influence on predictions  
-   [LIME HTML Explanation](visuals/lime_explanation_sample0.html)
+🧠 Sample LIME Explanation
 
+<p align="center">
+  <img src="visuals/lime_output.png" width="500"/>
+</p>
+
+📎 [Download Full Interactive LIME Explanation](visuals/lime_explanation_sample0.html)
 
 
 🧠 Explainability
