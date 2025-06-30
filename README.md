@@ -76,10 +76,9 @@ This project includes local model interpretation using **LIME (Local Interpretab
 - It highlights which words contributed to the model classifying a job posting as **real** or **fake**
 - [View Sample LIME Explanation](visuals/lime_explanation_sample0.html)
 
-🔜 SHAP (SHapley Additive Explanations)
----
 
-✅ SHAP (SHapley Additive Explanations)
+
+📊 SHAP (SHapley Additive Explanations)
 
 SHAP takes explainability to the next level — by showing the overall importance of each word across all job posts, and letting us zoom into individual predictions.
 
@@ -117,6 +116,7 @@ Fake_Job_Detection/
 ├── notebooks/fake_job_detection.ipynb         # Jupyter notebook with full project code  
 ├── visuals/confusion_matrix.png               # Confusion matrix and plots
 ├── visuals/lime_explanation_sample0.html      # LIME HTML output for local model explainability
+├── visuals/lime_output.png                    # LIME PNG screenshot
 ├── visuals/shap_summary_plot.png              # SHAP bar plot
 ├── visuals/shap_beeswarm.png.png              # SHAP beeswarm plot
 ├── visuals/shap_waterfall_sample1.png         # SHAP waterfall (sample 1)
