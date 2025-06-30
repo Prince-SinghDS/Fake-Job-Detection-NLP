@@ -1,4 +1,4 @@
-🚧 **In Progress** - LIME Added, SHAP & Deployment Coming Soon
+🚧 **In Progress** - SHAP Added,Deployment Coming Soon
 
 🕵️‍♂️ Fake Job Detection using NLP & Machine Learning
 
@@ -15,6 +15,7 @@ This project focuses on detecting **fake job postings** using **Natural Language
 - Trains a **Logistic Regression** classifier
 - Evaluates model performance using accuracy, precision, recall, and confusion matrix
 - Visualizes performance with a heatmap
+- Adds model interpretability using **LIME** and **SHAP**
 
 
 
@@ -26,6 +27,7 @@ This project focuses on detecting **fake job postings** using **Natural Language
 - **NLTK** – Text preprocessing
 - **scikit-learn** – TF-IDF, model training, evaluation
 - **matplotlib**, **seaborn** – Visualization
+- **LIME**, **SHAP** - Model explainability
 
 
 
@@ -43,7 +45,7 @@ To run the notebook locally, download the dataset from the above link and save i
 
 📊 Model Evaluation
 
-The model was evaluated using a test set and the following metrics, followed by local interpretation using LIME:
+The model was evaluated using a test set and the following metrics :
 
 - **Accuracy**
 - **Precision**
@@ -74,35 +76,69 @@ This project includes local model interpretation using **LIME (Local Interpretab
 - It highlights which words contributed to the model classifying a job posting as **real** or **fake**
 - [View Sample LIME Explanation](visuals/lime_explanation_sample0.html)
 
-🔜 SHAP (SHapley Additive Explanations) will be added next for global model interpretation.
+🔜 SHAP (SHapley Additive Explanations)
+---
+
+✅ SHAP (SHapley Additive Explanations)
+
+SHAP takes explainability to the next level — by showing the overall importance of each word across all job posts, and letting us zoom into individual predictions.
+
+What we did:
+- Used SHAP’s `LinearExplainer` for Logistic Regression + TF-IDF
+- Visualized **global feature importance** with bar & beeswarm plots
+- Visualized **individual prediction explanations** with waterfall plots
 
 
+📊 SHAP Summary Plot
+<p align="center">
+  <img src="visuals/shap_summary_plot.png" width="500"/>
+</p>
 
-## 📂 Project Structure
+🐝 SHAP Beeswarm Plot
+<p align="center">
+  <img src="visuals/shap_beeswarm_plot.png" width="500"/>
+</p>
+
+💧 SHAP Waterfall Plot – Sample 1
+<p align="center">
+  <img src="visuals/shap_waterfall_sample1.png" width="500"/>
+</p>
+
+💧 SHAP Waterfall Plot – Sample 2
+<p align="center">
+  <img src="visuals/shap_waterfall_sample2.png" width="500"/>
+</p>
+
+
+ 📂 Project Structure
 
 Fake_Job_Detection/
 ├── data/fake_job_postings.csv                 # Dataset used locally (linked via Kaggle) fake_job_postings.csv
 ├── notebooks/fake_job_detection.ipynb         # Jupyter notebook with full project code  
 ├── visuals/confusion_matrix.png               # Confusion matrix and plots
 ├── visuals/lime_explanation_sample0.html      # LIME HTML output for local model explainability
+├── visuals/shap_summary_plot.png              # SHAP bar plot
+├── visuals/shap_beeswarm.png.png              # SHAP beeswarm plot
+├── visuals/shap_waterfall_sample1.png         # SHAP waterfall (sample 1)
+├── visuals/shap_waterfall_sample2.png         # SHAP waterfall (sample 2)
 ├── README.md                                  # Project overview and documentation
 
 
 
-## 🔮 Future Enhancements
+🔮 Future Enhancements
 
-- 🔍 Add **Explainable AI** using LIME and SHAP to explain predictions
-- 🔁 Train multiple classifiers (Random Forest, XGBoost, etc.)
-- 🌐 Deploy a web app using Streamlit
-- ✒️ Write a research blog/post about this project
+•⁠  ⁠🔁 Train multiple classifiers (Random Forest, XGBoost, etc.)
+•⁠  ⁠🌐 Deploy a web app using *Streamlit*
+•⁠  ⁠📈 Add advanced evaluation metrics (ROC AUC, cross-validation)
+•⁠  ⁠✒️ Write a blog post or research paper based on the project
 
 
 
-## 🙌 Author
+🙌 Author
 
 **Prince Singh**  
 Final Year B.E. Student – Electronics & Computer Science  
-Atharva College of Engineering
+Atharva College of Engineering, University of Mumbai
 
 📎 [LinkedIn Profile](https://www.linkedin.com/in/prince-singh-b35209368)  
 📎 [GitHub Profile](https://github.com/Prince-SinghDS)
