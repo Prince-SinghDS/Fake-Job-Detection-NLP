@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import time
 
 
-st.set_page_config(page_title="🕵️ Fake Job Detector", page_icon="🔍", layout="wide")
+st.set_page_config(page_title="🕵️ Fake Job Detector", page_icon="favicon.png", layout="wide")
 st.markdown("""
     <style>
     .stApp {
