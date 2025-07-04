@@ -2,7 +2,6 @@ import streamlit as st
 import joblib
 import shap
 import matplotlib.pyplot as plt
-shap.initjs()
 import time
 
 
