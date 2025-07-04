@@ -1,6 +1,7 @@
-🚧 **In Progress** - SHAP Added,Deployment Coming Soon
-
 🕵️‍♂️ Fake Job Detection using NLP & Machine Learning
+
+🚀 **Live Now** – SHAP, LIME Added | ✅ Streamlit Web App Deployed
+App link🔗 - https://fake-job-detection-nlp.streamlit.app
 
 This project focuses on detecting **fake job postings** using **Natural Language Processing (NLP)** and **Machine Learning**. Built as an end-to-end text classification system, it analyzes job listings and classifies them as real or fake using a Logistic Regression model on TF-IDF-transformed data.
 
@@ -16,6 +17,8 @@ This project focuses on detecting **fake job postings** using **Natural Language
 - Evaluates model performance using accuracy, precision, recall, and confusion matrix
 - Visualizes performance with a heatmap
 - Adds model interpretability using **LIME** and **SHAP**
+- Deploys as a interactive *Streamlit Web App*
+
 
 
 
@@ -24,6 +27,7 @@ This project focuses on detecting **fake job postings** using **Natural Language
 - **Python**
 - **Jupyter Notebook**
 - **pandas**, **numpy** – Data handling
+- **XGBoost**
 - **NLTK** – Text preprocessing
 - **scikit-learn** – TF-IDF, model training, evaluation
 - **matplotlib**, **seaborn** – Visualization
@@ -45,6 +49,7 @@ To run the notebook locally, download the dataset from the above link and save i
 
 📊 Model Evaluation
 
+✅ Best Model: *XGBoost* (after GridSearchCV)
 The model was evaluated using a test set and the following metrics :
 
 - **Accuracy**
@@ -52,6 +57,23 @@ The model was evaluated using a test set and the following metrics :
 - **Recall**
 - **F1-Score**
 - **Confusion Matrix**
+
+-  Metric       | Score (Tuned XGBoost) |
+|--------------|----------------------|
+| Accuracy     | 91%+  
+| Precision    | ~0.89  
+| Recall       | ~0.58  
+| F1 Score     | ~0.70  
+
+
+📊 Model Comparisons
+<p align="center">
+  <img src="visuals/model_comparison_accuracy.png" width="450"/>
+  <img src="visuals/model_comparison_precision.png" width="450"/>
+  <img src="visuals/model_comparison_recall.png" width="450"/>
+  <img src="visuals/model_comparison_f1_score.png" width="450"/>
+</p>
+
 
 📉 Here’s a sample confusion matrix:
 
@@ -123,14 +145,32 @@ Fake_Job_Detection/
 ├── visuals/shap_waterfall_sample2.png         # SHAP waterfall (sample 2)
 ├── README.md                                  # Project overview and documentation
 
+🌐 Deployed Streamlit App
 
+🖥️ Built with ⁠ Streamlit ⁠, offering:
+•⁠  ⁠🎯 Pre-filled Example Job Button
+•⁠  ⁠🫆 Predict Button with Confidence Score
+•⁠  ⁠📉 Visual Confidence Progress
+•⁠  ⁠📄 Download Prediction
+•⁠  ⁠📊 SHAP Visuals
+•⁠  ⁠🧹 Clear Fields Button
+
+ 📸 App Screenshots
+<p align="center">
+  <img src="visuals/app_home.png" width="500"/>
+  <img src="visuals/app_prediction.png" width="500"/>
+</p>
+
+🔗 [Deployed App](https://your-streamlit-app-link)
+)
 
 🔮 Future Enhancements
 
-•⁠  ⁠🔁 Train multiple classifiers (Random Forest, XGBoost, etc.)
-•⁠  ⁠🌐 Deploy a web app using *Streamlit*
-•⁠  ⁠📈 Add advanced evaluation metrics (ROC AUC, cross-validation)
-•⁠  ⁠✒️ Write a blog post or research paper based on the project
+•⁠  ⁠🧠 Integrate advanced models (e.g., BERT, LSTM)
+•⁠  ⁠📊 Add ROC-AUC, PR Curves
+•⁠  ⁠🌎 Add language detection and multilingual support
+•⁠  ⁠📱 Make app responsive on mobile
+•⁠  ⁠📝 Publish a blog or academic paper
 
 
 
@@ -138,7 +178,8 @@ Fake_Job_Detection/
 
 **Prince Singh**  
 Final Year B.E. Student – Electronics & Computer Science  
-Atharva College of Engineering, University of Mumbai
+Atharva College of Engineering
+University of Mumbai
 
 📎 [LinkedIn Profile](https://www.linkedin.com/in/prince-singh-b35209368)  
 📎 [GitHub Profile](https://github.com/Prince-SinghDS)
