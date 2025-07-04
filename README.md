@@ -148,12 +148,12 @@ Fake_Job_Detection/
 🌐 Deployed Streamlit App
 
 🖥️ Built with ⁠ Streamlit ⁠, offering:
-•⁠  ⁠🎯 Pre-filled Example Job Button
-•⁠  ⁠🫆 Predict Button with Confidence Score
-•⁠  ⁠📉 Visual Confidence Progress
-•⁠  ⁠📄 Download Prediction
-•⁠  ⁠📊 SHAP Visuals
-•⁠  ⁠🧹 Clear Fields Button
+-  ⁠🎯 Pre-filled Example Job Button
+-⁠  ⁠🫆 Predict Button with Confidence Score
+-⁠  ⁠📉 Visual Confidence Progress
+-  ⁠📄 Download Prediction
+-⁠  ⁠📊 SHAP Visuals
+-⁠  ⁠🧹 Clear Fields Button
 
  📸 App Screenshots
 <p align="center">
@@ -166,11 +166,11 @@ Fake_Job_Detection/
 
 🔮 Future Enhancements
 
-•⁠  ⁠🧠 Integrate advanced models (e.g., BERT, LSTM)
-•⁠  ⁠📊 Add ROC-AUC, PR Curves
-•⁠  ⁠🌎 Add language detection and multilingual support
-•⁠  ⁠📱 Make app responsive on mobile
-•⁠  ⁠📝 Publish a blog or academic paper
+-⁠  ⁠🧠 Integrate advanced models (e.g., BERT, LSTM)
+-⁠  ⁠📊 Add ROC-AUC, PR Curves
+-⁠  ⁠🌎 Add language detection and multilingual support
+-⁠  ⁠📱 Make app responsive on mobile
+-⁠  ⁠📝 Publish a blog or academic paper
 
 
 
